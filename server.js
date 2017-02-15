@@ -10,12 +10,12 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article_one',function(req,res) { 
-    res.sendFile('article one requested and will be served' );}
- );
+    res.sendFile('article one requested and will be served' );
+});
  
  app.get('/article-two',function(req,res) { 
-    res.sendFile('article two requested and will be served' );}
- );
+    res.sendFile('article two requested and will be served' );
+});
  
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
